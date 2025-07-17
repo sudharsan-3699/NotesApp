@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #fafbfc;
+  font-family: 'Ubuntu', Arial, sans-serif;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.app-container {
+  max-width: 700px;
+  margin: 2rem auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px 0 rgba(34, 42, 53, 0.05);
+  padding: 2rem;
+}
+
+h1 {
+  text-align: center;
+  color: #003366;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 1.5rem;
+}
+
+input,
+textarea {
+  padding: 0.6em 1em;
+  border-radius: 5px;
+  border: 1px solid #bfd0ea;
+  font-size: 1rem;
+  transition: border-color 0.2s, background-color 0.2s;
+}
+
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #bfd0ea;
+  background: #fff;
+}
+
+textarea {
+  flex: 1 0 100%;
+  min-height: 60px;
+  resize: vertical;
+}
+
+button {
+  background: #007bfc;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.6em 1.4em;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s;
+  margin: 4px;
+}
+
+button:hover,
+button:focus {
+  background: #005bb5;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  padding: 1em;
+  margin-bottom: 12px;
+  box-shadow: 2px 4px 12px 0 rgba(80, 120, 160, 0.03);
+}
+
+li strong {
+  font-size: 1.07em;
+  color: #184082;
+}
+
+li em {
+  font-size: 0.9em;
+  color: #8898ad;
+  display: block;
+  margin-bottom: 4px;
+}
+
+li div {
+  margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+  .app-container {
+    padding: 1rem;
+  }
+
+  form {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+/* ✨ Custom Button Styles */
+.btn-edit {
+  margin-right: 10px;
+  padding: 6px 12px;
+}
+
+.btn-delete {
+  background-color: #d62828;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-delete:hover {
+  background-color: #a71d2a;
+}
